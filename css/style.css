@@ -1,0 +1,142 @@
+:root {
+  /* Primary color  */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral Color */
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --darkBlue2: hsl(213, 16%, 24%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+
+  /* Font */
+  --font01: "Overpass", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font01);
+}
+
+/* CLASSES */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--veryDarkBlue);
+}
+
+.container {
+  width: 90%;
+  min-width: 30rem;
+  max-width: 40rem;
+  border-radius: 3rem;
+  background-color: var(--darkBlue);
+  padding: 2.5rem;
+}
+
+.mb {
+  margin-bottom: 2rem;
+}
+
+.pt {
+  padding-top: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.white {
+  color: var(--white);
+}
+
+.grey {
+  color: var(--lightGrey);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.circle {
+  padding: 1.8rem;
+  border-radius: 50%;
+  background-color: var(--darkBlue2);
+}
+
+.efect:hover {
+  color: var(--white);
+  background-color: var(--lightGrey);
+}
+
+.inlb {
+  display: inline-block;
+}
+
+.activeButton {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* END CLASSES */
+
+/* CARD1 */
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating div {
+  cursor: pointer;
+}
+
+.submit {
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 1.5rem;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.submit:active {
+  color: var(--orange);
+  background-color: var(--white);
+}
+/* END CARD1 */
+
+/* CARD2 */
+.selected {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.selected p {
+  color: var(--orange);
+  padding: 1rem;
+  background-color: var(--darkBlue2);
+  border-radius: 3rem;
+}
+/* END CARD2 */

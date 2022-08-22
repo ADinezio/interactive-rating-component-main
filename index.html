@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <!-- Card1 -->
+      <div class="container card1" id="card1">
+        <div class="card1__image mb">
+          <img class="circle pt" src="images/icon-star.svg" alt="star-image" />
+        </div>
+        <div class="card1__info mb">
+          <h1 class="white">How did we do?</h1>
+          <p class="info__text grey">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating mb" id="rating">
+          <div><p class="circle efect grey" id="btn1">1</p></div>
+          <div><p class="circle efect grey" id="btn2">2</p></div>
+          <div><p class="circle efect grey" id="btn3">3</p></div>
+          <div><p class="circle efect grey" id="btn4">4</p></div>
+          <div><p class="circle efect grey" id="btn5">5</p></div>
+        </div>
+        <div class="submit center mb" id="submit">
+          <p>Submit</p>
+        </div>
+      </div>
+      <!-- End Card1 -->
+
+      <!-- Card2 -->
+      <div class="container card2 hidden" id="card2">
+        <div class="card2__image mb center">
+          <img
+            class="pt"
+            src="images/illustration-thank-you.svg"
+            alt="thank-image"
+          />
+        </div>
+        <div class="selected mb">
+          <p class="center inlb">You selected <span></span> out of 5</p>
+        </div>
+        <div class="card2__info mb">
+          <h2 class="center white mb">Thank you!</h2>
+          <p class="info__text grey center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+      <!-- End Card2 -->
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
