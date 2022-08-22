@@ -20,7 +20,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ### Links
 
 - Solution URL: [https://github.com/ADinezio/profile-card-component-main.git]
-- Live Site URL: [https://sitweb10.netlify.app/]
+- Live Site URL: [https://sitweb11.netlify.app/]
 
 ### Built with
 
